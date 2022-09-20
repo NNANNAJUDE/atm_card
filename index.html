@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM_CARD</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="card_container">
+
+      <div class="card_front_side">
+        
+        <div class="card_header"></div>
+
+        <div class="card_chips"></div>
+
+        <div class="card_number">5690265433242456262828</div>
+
+        <div class="card_date">VALID THRU: <i id="cardDate"></i></div>
+
+        <div id="card_name_logo">
+        <div class="card_name"> NWANKWO JOSIA NWOGE</div>
+        <div class="verve_logo"></div>
+        </div>
+     </div>
+
+    
+
+    <div class="card_back_side">
+        <div class="scm-no">SCM-4159-0320</div>
+        <div class="dark_line"></div>
+
+        <div class="security_code_div">Security Code:<span class="security_code">258</span></div>
+
+        <div class="authorized_Signature">AUTHORIZED SIGNATURE</div>
+
+        <div class="authorize_text_seal_container">
+        <div class="card_seal"></div>
+        <p class="authorized_text">The card remains the property of Access Bank Plc. Unauthorized Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
+        </div>
+
+        <div class="logo_container">
+        <div class="interswitch"> </div>
+        <div class="access_logo"></div>
+        <div class="reward_chips"></div> 
+        </div>
+
+    </div>
+
+        <form class="account_info" onclick="printATMcard()">
+            <label>ACCOUNT NAME:<input type="text" name="account_name" id="account_name"></label> <br>
+            <label >ACCOUNT NO: <input type="number" name="account_no" id="account no"></label> </br>
+            <label >EXPIRE DATE:<input type="date" name="expire_date" id="expire_date"></label>
+            <label >SECURITY CODE:<input type="number" class="security_code"></label>
+            <button type="submit" class="submit">SUBMIT</button>
+
+        </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
